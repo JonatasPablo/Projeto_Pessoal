@@ -1,0 +1,137 @@
+/* Estilos padrão */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    font-size: 14px; /* Tamanho da fonte em telas maiores */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex; /* Adiciona flexbox ao form */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: flex-start; /* Alinha os elementos à esquerda */
+    background-color: #020d4d;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 50px; /* Adiciona espaçamento no topo do formulário */
+}
+
+header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 100%; /* Centraliza o texto na largura total do form */
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #ccc;
+    width: 100%;
+}
+
+/* Estilo para os labels específicos */
+
+label[for="decimoterceiro"],
+label[for="feriasproporcional"],
+label[for="umterco"],
+label[for="fgts"] {
+    color: #fff; /* Altera a cor do texto para branco */
+}
+
+/* Altera a cor do texto dos inputs para branco */
+input[type="text"],
+input[type="text"][id="decimoterceiro"],
+input[type="text"][id="feriasproporcional"],
+input[type="text"][id="umterco"],
+input[type="text"][id="fgts"] {
+    width: calc(100% - 32px); /* Largura igual ao botão (considerando o padding) */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+    color: #fff; /* Altera a cor do texto para branco */
+}
+
+/* Define a cor do texto para preto nos inputs salario e contabilidade */
+input[type="text"][id="salario"],
+input[type="text"][id="contabilidade"] {
+    color: #000;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#fgts {
+    margin-bottom: 20px;
+}
+
+input[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+#total {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff; /* Altera a cor do texto para branco */
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#totalValue {
+    color: #007bff;
+}
+
+/* Media queries para responsividade */
+
+@media screen and (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    header {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input[type="text"] {
+        font-size: 12px; /* Tamanho da fonte em telas menores */
+    }
+}
