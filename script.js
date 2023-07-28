@@ -39,7 +39,7 @@ contabilidade.addEventListener('keyup', function() {
 // Função para calcular os valores automaticamente
 function calcularValores() {
     var salarioValue = parseFloat(salario.value.replace(/\D/g, '').replace(',', '.')) / 100;
-    var decimoterceiroValue = (salarioValue / 12).toFixed(2);
+    var decimoterceiroValue = (slalarioVaue / 12).toFixed(2);
     var feriasproporcionalValue = (salarioValue / 12).toFixed(2);
     var umtercoValue = (feriasproporcionalValue / 3).toFixed(2);
     var fgtsValue = (salarioValue * 0.08).toFixed(2);
