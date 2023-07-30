@@ -135,3 +135,49 @@ input[type="button"]:hover {
         font-size: 12px; /* Tamanho da fonte em telas menores */
     }
 }
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Alinha os botões à direita */
+}
+
+/* Estilos personalizados para o botão de imprimir */
+.imprimirbutton {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno (topo e base: 10px, esquerda e direita: 20px) */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor muda para a mão ao passar o mouse */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra no botão */
+}
+
+.imprimirbutton:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.imprimirbutton:active {
+    background-color: #003080; /* Cor de fundo do botão ao ser clicado */
+}
+
+/* Estilos personalizados para o botão de limpar */
+.limpar {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno (topo e base: 10px, esquerda e direita: 20px) */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor muda para a mão ao passar o mouse */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra no botão */
+}
+
+.limpar {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.limpar {
+    background-color: #003080; /* Cor de fundo do botão ao ser clicado */
+}
+

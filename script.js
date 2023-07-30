@@ -1,5 +1,30 @@
+// ... Seu código JavaScript existente ...
+
+// Event listener para o botão "Limpar"
+document.getElementById('limparButton').addEventListener('click', function() {
+        // Limpar os campos de entrada
+        document.getElementById('salario').value = '';
+        document.getElementById('contabilidade').value = '';
+        document.getElementById('decimoterceiro').value = '';
+        document.getElementById('feriasproporcional').value = '';
+        document.getElementById('umterco').value = '';
+        document.getElementById('fgts').value = '';
+        document.getElementById('total').value = '';
+
+        // Habilitar os campos após a limpeza
+        document.getElementById('decimoterceiro').disabled = false;
+        document.getElementById('feriasproporcional').disabled = false;
+        document.getElementById('umterco').disabled = false;
+        document.getElementById('fgts').disabled = false;
+        document.getElementById('total').disabled = false;
+    });
+
+document.getElementById('botaoimprimir').addEventListener('click', function() {
+    window.print();
+});
+ 
  // Função para formatar o valor para moeda em Reais (R$)
- function formatCurrency(input) {
+function formatCurrency(input) {
     var value = input.replace(/\D/g, '');
     value = (value / 100).toFixed(2);
     value = 'R$ ' + value.replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
@@ -62,9 +87,10 @@ function calcularValores() {
 
 calcularButton.addEventListener('click', calcularValores);
 
-// Adiciona um evento para acionar a função calcularValores() quando a tecla "Enter" for pressionada
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         calcularValores();
     }
 });
+
+
